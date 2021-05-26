@@ -21,4 +21,8 @@
     <OutputPath>..\..\..\bin\Release\Any CPU\</OutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Schulteisz.Document.Interfaces\Schulteisz.Document.Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>
