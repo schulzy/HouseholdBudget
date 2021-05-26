@@ -3,34 +3,47 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schultiesz.HouseholdBudget.UI", "Schultiesz.HouseholdBudget.UI\Schultiesz.HouseholdBudget.UI.csproj", "{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schultiesz.HouseholdBudget.UI", "src\HouseholdBudget\Schultiesz.HouseholdBudget.UI\Schultiesz.HouseholdBudget.UI.csproj", "{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dokument", "Dokument", "{52D351A6-0BD8-46BF-BD13-DF983E78797A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schulteisz.Document.Processor", "Schulteisz.Document.Processor\Schulteisz.Document.Processor.csproj", "{595E652E-6234-4FFC-8C75-26A3C136718A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schulteisz.Document.Processor", "src\DocumentProcessing\Schulteisz.Document.Processor\Schulteisz.Document.Processor.csproj", "{595E652E-6234-4FFC-8C75-26A3C136718A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EB7AC55B-9F17-4550-922E-1B0D7807B22C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schulteisz.Document.Processor.Test", "Tests\Schulteisz.Document.Processor.Test\Schulteisz.Document.Processor.Test.csproj", "{F6C4131E-E4C4-43FC-B047-584445679044}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schulteisz.Document.Processor.Test", "Tests\Schulteisz.Document.Processor.Test\Schulteisz.Document.Processor.Test.csproj", "{F6C4131E-E4C4-43FC-B047-584445679044}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}.Debug|x64.ActiveCfg = Debug|x64
+		{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}.Debug|x64.Build.0 = Debug|x64
 		{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}.Release|x64.ActiveCfg = Release|x64
+		{CE80CEF2-B9C1-483F-9F43-F370AFAB6B29}.Release|x64.Build.0 = Release|x64
 		{595E652E-6234-4FFC-8C75-26A3C136718A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{595E652E-6234-4FFC-8C75-26A3C136718A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595E652E-6234-4FFC-8C75-26A3C136718A}.Debug|x64.ActiveCfg = Debug|x64
+		{595E652E-6234-4FFC-8C75-26A3C136718A}.Debug|x64.Build.0 = Debug|x64
 		{595E652E-6234-4FFC-8C75-26A3C136718A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{595E652E-6234-4FFC-8C75-26A3C136718A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595E652E-6234-4FFC-8C75-26A3C136718A}.Release|x64.ActiveCfg = Release|x64
+		{595E652E-6234-4FFC-8C75-26A3C136718A}.Release|x64.Build.0 = Release|x64
 		{F6C4131E-E4C4-43FC-B047-584445679044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F6C4131E-E4C4-43FC-B047-584445679044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C4131E-E4C4-43FC-B047-584445679044}.Debug|x64.ActiveCfg = Debug|x64
+		{F6C4131E-E4C4-43FC-B047-584445679044}.Debug|x64.Build.0 = Debug|x64
 		{F6C4131E-E4C4-43FC-B047-584445679044}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6C4131E-E4C4-43FC-B047-584445679044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C4131E-E4C4-43FC-B047-584445679044}.Release|x64.ActiveCfg = Release|x64
+		{F6C4131E-E4C4-43FC-B047-584445679044}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
