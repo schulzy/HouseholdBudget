@@ -5,7 +5,7 @@
 
     <IsPackable>false</IsPackable>
 
-    <Platforms>AnyCPU;x64</Platforms>
+    <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +16,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\DocumentProcessing\Schulteisz.Document.Interfaces\Schulteisz.Document.Interfaces.csproj" />
+    <ProjectReference Include="..\..\src\DocumentProcessing\Schulteisz.Document.PdfReader\Schulteisz.Document.PdfReader.csproj" />
   </ItemGroup>
 
 </Project>
