@@ -6,7 +6,7 @@ namespace Schulteisz.Document.Processor.Test
     public class AccountStatementParser
     {
         [TestMethod]
-        public void ParseCoomerzBank()
+        public void ParseCommerzBank()
         {
             // Arrange
 
