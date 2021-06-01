@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UglyToad.PdfPig;
 
 namespace Schulteisz.Document.PdfReader
@@ -12,14 +13,23 @@ namespace Schulteisz.Document.PdfReader
         private IEnumerable<IPage> _pages = new List<IPage>();
         private bool _disposed = false;
 
+        /// <summary>
+        /// ctor Document
+        /// </summary>
+        /// <param name="documentPath">Path of the pdf file</param>
         public Document(string documentPath)
         {
             if (!File.Exists(documentPath))
                 throw new ArgumentException($"{nameof(documentPath)} parameter is invalid");
 
             _document = PdfDocument.Open(documentPath);
+            _pages = _document.GetPages().Select(page => new Page(page));
         }
 
+        /// <summary>
+        /// ctor Document
+        /// </summary>
+        /// <param name="documentStream">pdf stream</param>
         public Document(Stream documentStream)
         {
             if (documentStream is null)
@@ -35,14 +45,14 @@ namespace Schulteisz.Document.PdfReader
         }
 
         #region IDisposable
+        /// <summary>
+        /// Dispose and close the <see cref="Document"/>
+        /// </summary>
         public void Dispose() => Dispose(true);
         #endregion
 
         #region IDocument
-        public IEnumerable<IPage> GetPages()
-        {
-            throw new System.NotImplementedException();
-        }
+        public IEnumerable<IPage> Pages { get { return _pages; } }
         #endregion
 
         #region Private methods

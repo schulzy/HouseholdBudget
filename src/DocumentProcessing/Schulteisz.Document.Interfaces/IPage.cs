@@ -4,6 +4,6 @@ namespace Schulteisz.Document.Interfaces
 {
     public interface IPage
     {
-        IEnumerable<string> GetLines();
+        IEnumerable<string> Lines { get; }
     }
 }
