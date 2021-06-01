@@ -23,4 +23,13 @@
 		<ProjectReference Include="..\..\src\DocumentProcessing\Schulteisz.Document.PdfReader\Schulteisz.Document.PdfReader.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Update="TestData\dummy.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="TestData\dummy.txt">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
 </Project>
